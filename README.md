@@ -4,7 +4,7 @@
 **This Repository depends on beta release of Android Studio and Android Plugin for Gradle.**
 
 ## Goal
-1. Run just only lint Gradle task
+1. Run just only lint Gradle task on Wercker
 1. Don't create original Docker image
 1. Install Android SDK via Android Plugin for Gradle
 
@@ -16,4 +16,4 @@
 - Push to GitHub or BitBucket
 
 ## Extra
-Using `WERCKER_CACHE_DIR` will save time to download. [Documents](http://devcenter.wercker.com/docs/quickstarts/building/java#build-pipeline)
+Using `WERCKER_CACHE_DIR` will save time to download.
