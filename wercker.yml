@@ -1,0 +1,12 @@
+box: openjdk:8
+build:
+  steps:
+    - script:
+        name: Setup license agreement
+        code: |
+          mkdir -p $ANDROID_HOME/licenses \
+          && echo "LICENSE_CONTENT_HERE" > $ANDROID_HOME/licenses/android-sdk-license
+    - script:
+        name: Test
+        code: |
+          ./gradlew lint
